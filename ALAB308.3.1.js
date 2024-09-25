@@ -63,7 +63,7 @@ function isPrime(num) {
 // Step 3: Create aloop to find the next prime number
 while (true) {
   if (isPrime(n)) {
-    console.log('The next prime number is: ${n}');
+    console.log(`The next prime number is: ${n}`); 
     break;
   }
   n++;
