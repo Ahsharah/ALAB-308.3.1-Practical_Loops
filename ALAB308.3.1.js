@@ -42,3 +42,29 @@ for (i = 0; i <= 100; i++) {
 // i am coming  
 // coming i am
 
+// Part 2 
+
+// Step 1: Declare an arbitrary number n
+let n = 10;
+
+// Step 2: Define a function to check if a number is prime
+function isPrime(num) {
+  if (num < 2) {
+    return false;
+  }
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
+// Step 3: Create aloop to find the next prime number
+while (true) {
+  if (isPrime(n)) {
+    console.log('The next prime number is: ${n}');
+    break;
+  }
+  n++;
+}
